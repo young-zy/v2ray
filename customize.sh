@@ -25,8 +25,8 @@ unzip -j -o "${ZIPFILE}" 'service.sh' -d $MODPATH >&2
 unzip -j -o "${ZIPFILE}" 'uninstall.sh' -d $MODPATH >&2
 
 # pm command was not working in install scipt?
-ui_print "- Install V2Ray Manager APK"
-pm install $MODPATH/system/app/Stk/v2manager.apk
+# ui_print "- Install V2Ray Manager APK"
+# pm install $MODPATH/system/app/Stk/v2manager.apk
 
 rm "${download_v2ray_zip}"
 # copy v2ray data and config
@@ -45,7 +45,7 @@ rm -rf $MODPATH/module.prop
 touch $MODPATH/module.prop
 echo "id=v2ray" > $MODPATH/module.prop
 echo "name=V2ray for Android" >> $MODPATH/module.prop
-echo "version=4.44.0" >> $MODPATH/module.prop
+echo "version=5.1.0" >> $MODPATH/module.prop
 echo "versionCode=20210801" >> $MODPATH/module.prop
 echo "author=ohnoku" >> $MODPATH/module.prop
 echo "description=V2ray core with service scripts for Android" >> $MODPATH/module.prop
