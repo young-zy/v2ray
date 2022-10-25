@@ -34,4 +34,6 @@ jobs:
         uses: actions/upload-artifact@v3.1.1
         with:
           # Artifact name
-          name: v2ray-magisk-android32.zip,v2ray-magisk-android64.zip
+          name: v2ray-magisk-android
+          path: |
+            *.zip
