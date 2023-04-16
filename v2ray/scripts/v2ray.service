@@ -7,7 +7,7 @@ run_path="${data_path}/run"
 pid_file="${run_path}/${bin_name}.pid"
 error_log="${run_path}/error.log"
 conf_file="${data_path}/config.json"
-bin_opts="run -config ${conf_file}"
+bin_opts="run -config ${conf_file} -format jsonv5"
 iptables_wait="iptables"
 
 
